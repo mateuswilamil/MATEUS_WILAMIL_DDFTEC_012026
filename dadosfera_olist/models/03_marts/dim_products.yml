@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: Dimensão de produtos com atributos físicos e descrições.
+    columns:
+      - name: product_id
+        description: Identificador do produto
+
+      - name: product_category_name
+        description: Categoria do produto
+
+      - name: title
+        description: Título sintético do produto (gerado)
+
+      - name: description
+        description: Descrição textual do produto

@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: Dados de clientes normalizados a partir da camada raw
+    columns:
+      - name: customer_id
+        description: Identificador único do cliente
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_unique_id
+        description: Identificador único persistente do cliente
+
+      - name: customer_zip_code_prefix
+        description: Prefixo do CEP do cliente
+
+      - name: customer_city
+        description: Cidade do cliente
+
+      - name: customer_state
+        description: Estado do cliente

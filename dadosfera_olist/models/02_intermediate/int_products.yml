@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: int_products
+    description: Produtos enriquecidos com descrições sintéticas.
+    columns:
+      - name: product_id
+        description: Identificador único do produto
+        tests:
+          - not_null
+          - unique
+
+      - name: product_category_name
+        description: Categoria do produto
+
+      - name: title
+        description: Título sintético do produto
+
+      - name: description
+        description: Descrição sintética do produto

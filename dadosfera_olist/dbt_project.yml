@@ -1,0 +1,26 @@
+name: 'dadosfera_olist'
+version: '1.0.0'
+
+profile: 'dadosfera_olist'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  dadosfera_olist:
+    00_raw:
+      +materialized: view
+    01_staging:
+      +materialized: view
+    02_intermediate:
+      +materialized: table
+    03_marts:
+      +materialized: table

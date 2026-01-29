@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_order_payments
+    description: Informações de pagamento dos pedidos
+    columns:
+      - name: order_id
+        description: Pedido associado ao pagamento
+        tests:
+          - not_null
+
+      - name: payment_sequential
+        description: Sequência do pagamento
+
+      - name: payment_type
+        description: Tipo de pagamento
+
+      - name: payment_installments
+        description: Quantidade de parcelas
+
+      - name: payment_value
+        description: Valor pago

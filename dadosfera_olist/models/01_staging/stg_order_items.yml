@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_order_items
+    description: Itens vendidos em cada pedido
+    columns:
+      - name: order_id
+        description: Pedido associado
+        tests:
+          - not_null
+
+      - name: order_item_id
+        description: Sequência do item dentro do pedido
+
+      - name: product_id
+        description: Produto vendido
+        tests:
+          - not_null
+
+      - name: seller_id
+        description: Vendedor responsável pelo item
+
+      - name: shipping_limit_date
+        description: Data limite para envio
+
+      - name: price
+        description: Preço do item
+
+      - name: freight_value
+        description: Valor do frete

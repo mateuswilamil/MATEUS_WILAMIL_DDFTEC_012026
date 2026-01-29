@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_product_descriptions
+    description: "Descrições sintéticas de produtos geradas a partir da categoria do produto."
+    columns:
+      - name: product_id
+        description: "Identificador único do produto."
+        tests:
+          - not_null
+          - unique
+
+      - name: title
+        description: "Título sintético do produto gerado a partir da categoria."
+
+      - name: description
+        description: "Descrição textual sintética do produto."

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: Dimensão de clientes do e-commerce.
+    columns:
+      - name: customer_id
+        description: Identificador do cliente
+
+      - name: customer_unique_id
+        description: Identificador único do cliente
+
+      - name: customer_city
+        description: Cidade do cliente
+
+      - name: customer_state
+        description: Estado do cliente

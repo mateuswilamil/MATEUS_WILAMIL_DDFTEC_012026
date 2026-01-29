@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: fct_sales
+    description: Tabela fato de vendas no nível de item do pedido.
+    columns:
+      - name: order_id
+        description: Identificador do pedido
+
+      - name: order_item_id
+        description: Item do pedido
+
+      - name: customer_id
+        description: Cliente
+
+      - name: product_id
+        description: Produto vendido
+
+      - name: price
+        description: Valor do item
+
+      - name: freight_value
+        description: Valor do frete
+
+      - name: total_payment_value
+        description: Valor total pago no pedido

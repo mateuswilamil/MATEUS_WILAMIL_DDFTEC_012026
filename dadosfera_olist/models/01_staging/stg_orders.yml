@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: Pedidos realizados na plataforma
+    columns:
+      - name: order_id
+        description: Identificador único do pedido
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: Cliente associado ao pedido
+        tests:
+          - not_null
+
+      - name: order_status
+        description: Status atual do pedido
+
+      - name: order_purchase_timestamp
+        description: Data e hora da compra
+
+      - name: order_approved_at
+        description: Data de aprovação do pedido
+
+      - name: order_delivered_carrier_date
+        description: Data de entrega à transportadora
+
+      - name: order_delivered_customer_date
+        description: Data de entrega ao cliente
+
+      - name: order_estimated_delivery_date
+        description: Data estimada de entrega

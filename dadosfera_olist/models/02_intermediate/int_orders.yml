@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_orders
+    description: Pedidos com status e datas principais.
+    columns:
+      - name: order_id
+        description: Identificador único do pedido
+        tests:
+          - not_null
+          - unique

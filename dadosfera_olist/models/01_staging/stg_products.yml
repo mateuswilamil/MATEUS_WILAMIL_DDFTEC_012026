@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_products
+    description: Cadastro de produtos
+    columns:
+      - name: product_id
+        description: Identificador único do produto
+        tests:
+          - not_null
+          - unique
+
+      - name: product_category_name
+        description: Categoria do produto
+
+      - name: product_name_length
+        description: Tamanho do nome do produto
+
+      - name: product_description_length
+        description: Tamanho da descrição do produto
+
+      - name: product_photos_qty
+        description: Quantidade de fotos do produto
+
+      - name: product_weight_g
+        description: Peso do produto em gramas
+
+      - name: product_length_cm
+        description: Comprimento do produto em cm
+
+      - name: product_height_cm
+        description: Altura do produto em cm
+
+      - name: product_width_cm
+        description: Largura do produto em cm

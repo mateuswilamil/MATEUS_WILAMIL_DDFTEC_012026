@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: dim_dates
+    description: "Dimensão calendário gerada a partir do intervalo entre a menor e a maior data de compra (order_purchase_timestamp) dos pedidos."
+    columns:
+      - name: date_key
+        description: "Chave da data no formato YYYYMMDD (inteiro)."
+        tests:
+          - not_null
+          - unique
+
+      - name: date_day
+        description: "Data (DATE)."
+        tests:
+          - not_null
+
+      - name: year
+        description: "Ano (YYYY)."
+        tests:
+          - not_null
+
+      - name: month
+        description: "Mês (1-12)."
+        tests:
+          - not_null
+
+      - name: year_month
+        description: "Ano-mês no formato YYYY-MM."
+        tests:
+          - not_null
+
+      - name: day_of_month
+        description: "Dia do mês (1-31)."
+        tests:
+          - not_null
+
+      - name: day_of_week_num
+        description: "Dia da semana (0-6), onde 0 geralmente representa domingo no strftime('%w')."
+        tests:
+          - not_null
+
+      - name: week_of_year
+        description: "Semana do ano (00-53) conforme strftime('%W')."
+        tests:
+          - not_null

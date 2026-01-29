@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_geolocation
+    description: Dados geográficos associados ao CEP
+    columns:
+      - name: geolocation_zip_code_prefix
+        description: Prefixo do CEP
+
+      - name: geolocation_lat
+        description: Latitude
+
+      - name: geolocation_lng
+        description: Longitude
+
+      - name: geolocation_city
+        description: Cidade
+
+      - name: geolocation_state
+        description: Estado

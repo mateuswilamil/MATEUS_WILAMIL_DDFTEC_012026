@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: int_order_items
+    description: Itens de pedidos enriquecidos com informações do pedido.
+    columns:
+      - name: order_id
+        description: Identificador do pedido
+
+      - name: order_item_id
+        description: Sequência do item no pedido
+
+      - name: product_id
+        description: Produto vendido
+
+      - name: customer_id
+        description: Cliente do pedido
+
+      - name: order_status
+        description: Status do pedido
+
+      - name: price
+        description: Valor do item
+
+      - name: freight_value
+        description: Valor do frete

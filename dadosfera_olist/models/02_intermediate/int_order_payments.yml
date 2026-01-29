@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_order_payments
+    description: Pagamentos agregados por pedido.
+    columns:
+      - name: order_id
+        description: Identificador do pedido
+
+      - name: total_payment_value
+        description: Valor total pago no pedido

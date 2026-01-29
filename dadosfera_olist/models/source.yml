@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Dados brutos do projeto Olist
+    schema: raw
+    tables:
+      - name: olist_customers
+      - name: olist_geolocation
+      - name: olist_order_items
+      - name: olist_order_payments
+      - name: olist_orders
+      - name: olist_products
+      - name: product_descriptions
