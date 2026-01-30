@@ -349,6 +349,22 @@ dbt docs serve
 
 ---
 
+## 🎥 Apresentação do Case (Vídeo)
+
+Como parte final da entrega do desafio técnico, foi gravado um vídeo de apresentação do case, no qual são apresentados:
+
+- Contexto do problema e objetivos do projeto  
+- Arquitetura da solução proposta  
+- Pipeline de dados (ingestão, qualidade, processamento e modelagem)  
+- Dashboard analítico e geração de valor para o negócio  
+
+📺 **Link para o vídeo (YouTube – Unlisted):**  
+[👉 https://youtu.be/SEU_LINK_AQUI](https://www.youtube.com/watch?v=nj7C6cv_kig)
+
+> O vídeo está configurado como *Unlisted* e pode ser acessado por qualquer pessoa que possua o link, conforme solicitado no desafio técnico.
+
+---
+
 ## 👤 Autor
 
 **Mateus Wilamil**  
